@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0)
+project(testopencv)
+set(CMAKE_CXX_FLAGS "-std=c++11")
+find_package(OpenCV REQUIRED)
+include_directories(${PROJECT_SOURCE_DIR}/include)
+aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_DIR)
+add_executable(testopencv ${SRC_DIR})
+target_link_libraries(testopencv ${OpenCV_LIBS})
