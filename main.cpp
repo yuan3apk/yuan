@@ -286,7 +286,7 @@ return df;
 // 主函数，处理视频流
 int main()
 {
-    cout << "袁春阳" << endl;
+    
     // 打开视频文件
     VideoCapture test2("/home/yuan/桌面/test/test2.mp4");
     if (!test2.isOpened())
